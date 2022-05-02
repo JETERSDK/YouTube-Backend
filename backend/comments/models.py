@@ -1,13 +1,21 @@
 from django.db import models
 from authentication.models import User
 
+
 # Create your models here.
 
 # <<<<<<<<<<<<<<<<< EXAMPLE FOR STARTER CODE USE <<<<<<<<<<<<<<<<<
 
-
-class Car(models.Model):
+class Comment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    make = models.CharField(max_length=30)
-    model = models.CharField(max_length=100)
-    year = models.IntegerField()
+    video_id = models.CharField(max_length=30)
+    texts = models.CharField(max_length=100)
+    likes = models.IntegerField()
+    dislikes = models.IntegerField()
+
+class Replies(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    comment = models.ForeignKey(User, on_delete=models.CASCADE)
+    text = models.CharField(max_length=100)
+    
+
