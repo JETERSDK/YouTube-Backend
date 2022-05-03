@@ -1,5 +1,6 @@
-from rest_framework import serializers
 from .models import Car
+from rest_framework import serializers
+
 
 # <<<<<<<<<<<<<<<<< EXAMPLE FOR STARTER CODE USE <<<<<<<<<<<<<<<<<
 
@@ -9,3 +10,5 @@ class CarSerializer(serializers.ModelSerializer):
         model = Car
         fields = ['id', 'make', 'model', 'year', 'user_id']
         depth = 1
+        
+       
