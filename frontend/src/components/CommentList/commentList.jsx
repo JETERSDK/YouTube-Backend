@@ -3,6 +3,7 @@ import LikeComment from '../LikeComment/likeComment';
 import DislikeComment from '../DislikeComment/dislikeComment';
 import ReplyForm from '../ReplyForm/replyForm';
 import axios from 'axios';
+import React from 'react';
 
 class CommentList extends Component {   
     constructor(props) {

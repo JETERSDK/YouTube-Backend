@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import React from 'react';
 
 class CommentForm extends Component {
     constructor(props) {

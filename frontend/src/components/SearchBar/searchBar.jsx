@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import React from 'react';
 
 class SearchBar extends Component {
     constructor(props) {
